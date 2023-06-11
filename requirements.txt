@@ -1,18 +1,9 @@
 
-glob
 pandas
 numpy
-sklearn.model_selection
-keras.utils.np_utils
-keras.preprocessing.image
-keras.layers
-keras.Model
-keras.applications.densenet
-keras.optimizers.Adam
-keras.callbacks.ReduceLROnPlateau
-keras.backend
-matplotlib.pyplot
-PIL.Image
-tensorflow.keras.preprocessing.image
+sklearn
+keras
+matplotlib
+Pillow
 tensorflow
-cv2
+opencv-python
