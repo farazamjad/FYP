@@ -14,7 +14,7 @@ pipeline {
         }
     stage('Build') {
       steps {
-        sh 'docker build -t model-image:latest .'
+        sh 'docker build -t fyp_model:latest .'
       }
     }
     stage('Login') {
@@ -25,7 +25,7 @@ pipeline {
     stage('Push Docker Image') {
       steps {
         withDockerRegistry([credentialsId: "faraz-dockerhub", url: "https://index.docker.io/v1/"]) {
-          sh  "docker push farazzz/fyp2_image:latest"
+          sh  "docker push farazzz/fyp_image:latest"
                 }
             }
         }
