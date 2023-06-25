@@ -8,13 +8,17 @@ pipeline {
   }
   stages {
     stage('Sync Code') {
-            steps {
-                git branch: 'main', credentialsId: 'farazamjad', url: 'https://github.com/farazamjad/FYP.git'
-            }
+      steps {
+        git branch: 'main', credentialsId: 'farazamjad', url: 'https://github.com/farazamjad/FYP.git'
+      }
+    }
+    stage('Initialize') {
+      steps {
+        script {
+          def dockerHome = tool 'Docker'
+          env.PATH = "${dockerHome}/bin:${env.PATH}"
         }
-     stage('Initialize'){
-        def dockerHome = tool 'Docker'
-        env.PATH = "${dockerHome}/bin:${env.PATH}"
+      }
     }
     stage('Build') {
       steps {
@@ -28,19 +32,19 @@ pipeline {
     }
     stage('Push Docker Image') {
       steps {
-        withDockerRegistry([credentialsId: "faraz-dockerhub", url: "https://index.docker.io/v1/"]) {
-          sh  "docker push farazzz/fyp_image:latest"
-                }
-            }
+        script {
+          withDockerRegistry([credentialsId: "faraz-dockerhub", url: "https://index.docker.io/v1/"]) {
+            sh 'docker push farazzz/fyp_image:latest'
+          }
         }
-        stage('Run Container') {
+      }
+    }
+    stage('Run Container') {
       steps {
         sh 'docker run -d -p 5080:80 farazzz/fyp2_image:latest'
       }
     }
   }
-
-
   post {
     always {
       sh 'docker logout'
