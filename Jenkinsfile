@@ -12,6 +12,10 @@ pipeline {
                 git branch: 'main', credentialsId: 'farazamjad', url: 'https://github.com/farazamjad/FYP.git'
             }
         }
+     stage('Initialize'){
+        def dockerHome = tool 'docker'
+        env.PATH = "${dockerHome}/bin:${env.PATH}"
+    }
     stage('Build') {
       steps {
         sh 'docker build -t fyp_model:latest .'
