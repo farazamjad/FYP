@@ -13,7 +13,7 @@ This repo contains our final year project which which was DermAssistant a mobile
 
 <img width="1206" alt="image" src="https://github.com/farazamjad/FYP/assets/81928514/eac93f9c-2dbb-461f-82f8-870482e1b1a4">
 
-APP Frontend
+## Using App to Classify skin disease
 <img width="1145" alt="image" src="https://github.com/farazamjad/FYP/assets/81928514/226521c5-213c-4d53-935a-5fa8b126c59f">
 
 
