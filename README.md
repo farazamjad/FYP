@@ -24,3 +24,5 @@ This repo contains our final year project which which was DermAssistant a mobile
 1.Portability: Docker containers provide a consistent runtime environment regardless of the underlying host system. This portability enables you to package an application and its dependencies into a container once and run it anywhere, whether it's a developer's machine, a testing environment, or a production server. This consistency eliminates the "it works on my machine" problem and simplifies deployment across different environments.
 
 2.Portability: Docker containers provide a consistent runtime environment regardless of the underlying host system. This portability enables you to package an application and its dependencies into a container once and run it anywhere, whether it's a developer's machine, a testing environment, or a production server. This consistency eliminates the "it works on my machine" problem and simplifies deployment across different environments.
+
+<img width="1145" alt="image" src="https://github.com/farazamjad/FYP/assets/81928514/226521c5-213c-4d53-935a-5fa8b126c59f">
