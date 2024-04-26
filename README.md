@@ -1,5 +1,22 @@
 # FYP
-This repo contains our final year project which which was DermAssistant a mobile based skin disease detection app.I have used MLOPS techniques to make this project scalable and automated.
+This repo contains our final year project which which was DermAssistant a mobile based skin disease detection app.I have used MLOPS techniques to make this project scalable and automated. The following poster shows how we approached our porject:
+
+<img width="541" alt="image" src="https://github.com/farazamjad/FYP/assets/81928514/4ac392a6-ea1c-46a4-8677-e46d506eff08">
+
+# Results and Outputs:
+## Classification Report
+
+<img width="1416" alt="image" src="https://github.com/farazamjad/FYP/assets/81928514/aff39d63-0bcf-44d4-b742-7931639e317b">
+
+
+## Confusion Matrix
+
+<img width="1206" alt="image" src="https://github.com/farazamjad/FYP/assets/81928514/eac93f9c-2dbb-461f-82f8-870482e1b1a4">
+
+APP Frontend
+<img width="1145" alt="image" src="https://github.com/farazamjad/FYP/assets/81928514/226521c5-213c-4d53-935a-5fa8b126c59f">
+
+
 # The following MLOPS techniques were used in this project:
 # 1. DVC:
 1.Versioning and Reproducibility: DVC allows you to version control your datasets, just like you version control your code with Git. It tracks changes to the dataset files, allowing you to easily switch between different versions and reproduce previous experiments.
@@ -25,4 +42,4 @@ This repo contains our final year project which which was DermAssistant a mobile
 
 2.Portability: Docker containers provide a consistent runtime environment regardless of the underlying host system. This portability enables you to package an application and its dependencies into a container once and run it anywhere, whether it's a developer's machine, a testing environment, or a production server. This consistency eliminates the "it works on my machine" problem and simplifies deployment across different environments.
 
-<img width="1145" alt="image" src="https://github.com/farazamjad/FYP/assets/81928514/226521c5-213c-4d53-935a-5fa8b126c59f">
+
