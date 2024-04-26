@@ -1,5 +1,8 @@
 # FYP
-This repo contains our final year project which which was DermAssistant a mobile based skin disease detection app.I have used MLOPS techniques to make this project scalable and automated. The following poster shows how we approached our porject:
+This repo contains our final year project which which was DermAssistant, a mobile based skin disease detection app.I have used MLOPS techniques to make this project scalable and automated. 
+
+The following poster shows how we approached our project:
+
 
 <img width="541" alt="image" src="https://github.com/farazamjad/FYP/assets/81928514/4ac392a6-ea1c-46a4-8677-e46d506eff08">
 
